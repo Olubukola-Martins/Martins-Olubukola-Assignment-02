@@ -27,9 +27,20 @@ function sumOfNumbers(arrayOfNumbers) {
  * @param {Array} arrayOfNumbers the array containing even or non-even numbers
  * @returns number the count of even numbers
  */
-function countEvenNumbers(arrayOfNumbers) {
-    return arrayOfNumbers.length;
-}
+let arrayOfNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+  function countEvenNumbers(arrayOfNumbers){
+    var count = 0;
+      for ( var i = 0; i<arrayOfNumbers.length; i++ ){ 
+        if (arrayOfNumbers[i] % 2 == 0){count++;}
+        }
+      return count;
+    };
+
+    console.log (countEvenNumbers(arrayOfNumbers))
+  
+
+
 // assignment.countEvenNumbers = countEvenNumbers;
 
 /**
@@ -46,10 +57,20 @@ function countEvenNumbers(arrayOfNumbers) {
  * @param {Array} arrayOfNumbers the array containing temperatures in Celsius to be converted
  * @returns Array the converted temperatures in Fahrenheit
  */
-function celsiusToFahrenheit(arrayOfNumbers) {
-    return arrayOfNumbers;
-}
-// assignment.celsiusToFahrenheit = celsiusToFahrenheit;
+  let arrayOfCelcius = [30, 45, 60, 75, 90];
+    function celsiusToFahrenheit(arrayOfCelcius)
+ { let i = 0;
+  let arrayOfFahrenheit = [];
+  while (i<arrayOfCelcius.length ) { 
+    arrayOfFahrenheit = (arrayOfCelcius[i] * 1.8) + 32;     
+     console.log (arrayOfFahrenheit); 
+     i++;
+      }      
+    }
+
+    celsiusToFahrenheit(arrayOfCelcius)
+
+
 
 
 // ========================
