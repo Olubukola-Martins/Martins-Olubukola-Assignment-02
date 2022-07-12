@@ -10,8 +10,8 @@ const assignment = {};
  * Calculate and return the sum of the numbers in an array.
  * If you did Challenge - 1, remove the comment in the line just after this function
  * 
- * @param {Array} arrayOfNumbers the array of numbers to sum
- * @returns number the sum of the numbers
+ *  {Array} arrayOfNumbers the array of numbers to sum
+ *  number the sum of the numbers
  */
 // function sumOfNumbers(arrayOfNumbers) {
 //     return arrayOfNumbers.length;
@@ -24,8 +24,8 @@ const assignment = {};
  * Count all even numbers within an array of numbers.
  * If you did Challenge - 2, remove the comment in the line just after this function
  * 
- * @param {Array} arrayOfNumbers the array containing even or non-even numbers
- * @returns number the count of even numbers
+ *  {Array} arrayOfNumbers the array containing even or non-even numbers
+ *  number the count of even numbers
  */
 let arrayOfNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
@@ -54,8 +54,8 @@ let arrayOfNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
  * 
  * See https://www.thoughtco.com/celcius-to-farenheit-formula-609227 for the conversion formula
  * 
- * @param {Array} arrayOfNumbers the array containing temperatures in Celsius to be converted
- * @returns Array the converted temperatures in Fahrenheit
+ *  {Array} arrayOfNumbers the array containing temperatures in Celsius to be converted
+ *  Array the converted temperatures in Fahrenheit
  */
   let arrayOfCelcius = [30, 45, 60, 75, 90];
     function celsiusToFahrenheit(arrayOfCelcius)
