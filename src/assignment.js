@@ -13,10 +13,15 @@ const assignment = {};
  * @param {Array} arrayOfNumbers the array of numbers to sum
  * @returns number the sum of the numbers
  */
-// function sumOfNumbers(arrayOfNumbers) {
-//     return arrayOfNumbers.length;
-// }
-// assignment.sumOfNumbers = sumOfNumbers;
+let arrayOfNumbers = [68,-68,27,94,72,-25,-51,32,10,64,-94, 4,34,-86,90,81,20,-56,-91,-50];
+ function sumOfNumbers(arrayOfNumbers) {
+   let sum = 0
+   for (let j=0; j<arrayOfNumbers.length; j++) 
+   {sum +=arrayOfNumbers[j];}
+     return sum;
+ }
+ console.log (sumOfNumbers(arrayOfNumbers))
+  assignment.sumOfNumbers = sumOfNumbers;
 
 /**
  * Challenge - 2
@@ -24,21 +29,23 @@ const assignment = {};
  * Count all even numbers within an array of numbers.
  * If you did Challenge - 2, remove the comment in the line just after this function
  * 
- *  @param {Array} arrayOfNumbers the array containing even or non-even numbers
- *  @returns number the count of even numbers
+ * @param {Array} arrayOfNumbers the array containing even or non-even numbers
+ * @returns number the count of even numbers
  */
-let arrayOfNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+ let arrayOfCelcius = [17,0,67,41,49,21,1,86,76,2,54,14,93,84,14,77,35,7,29,64];
+ function countEvenNumbers(arrayOfCelcius){
+   var count = 0;
+     for ( var i = 0; i<arrayOfCelcius.length; i++ ){ 
+       if (arrayOfCelcius[i] % 2 == 0){
+         count++;
+       }
+     }
+     return count;
+   };
 
-  function countEvenNumbers(arrayOfNumbers){
-    var count = 0;
-      for ( var i = 0; i<arrayOfNumbers.length; i++ ){ 
-        if (arrayOfNumbers[i] % 2 == 0){count++;}
-        }
-      return count;
-    };
+   console.log (countEvenNumbers(arrayOfCelcius))
 
-    console.log (countEvenNumbers(arrayOfNumbers))
-  
+  assignment.countEvenNumbers = countEvenNumbers;
 
 /**
  * Challenge - 3
@@ -52,26 +59,28 @@ let arrayOfNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
  * See https://www.thoughtco.com/celcius-to-farenheit-formula-609227 for the conversion formula
  * 
  * @param {Array} arrayOfNumbers the array containing temperatures in Celsius to be converted
- *  @rturns Array the converted temperatures in Fahrenheit
+ * @returns Array the converted temperatures in Fahrenheit
  */
-  let arrayOfCelcius = [30, 45, 60, 75, 90];
-    function celsiusToFahrenheit(arrayOfCelcius)
- { let i = 0;
-  let arrayOfFahrenheit = [];
-  while (i<arrayOfCelcius.length ) { 
-    arrayOfFahrenheit = (arrayOfCelcius[i] * 1.8) + 32;     
-     console.log (arrayOfFahrenheit); 
-     i++;
-      }      
-    }
 
-    celsiusToFahrenheit(arrayOfCelcius)
+// const arrayOfFahrenheit = [24, 30, 14, -8, 22, 17, -5, 25, 2, 25, 10, 10, 28, 33, 39, 28, 23, -1, 2, -4];
+//  let arrayOfCelcius = [];
+//  function celsiusToFahrenheit(arrayOfFahrenheit)
+//  { let index = 0;
+//   arrayOfCelcius.length == arrayOfFahrenheit.length;
+// while (index<arrayOfFahrenheit.length ) { 
+//  arrayOfCelcius = (arrayOfFahrenheit[index] * 9/5) + 32;     
+//   console.log (Math.trunc(arrayOfCelcius)); 
+//    index++;
+//    } 
+//  }
+//     celsiusToFahrenheit(arrayOfCelcius)
 
+// assignment.celsiusToFahrenheit = celsiusToFahrenheit;
 
+ 
 
 
 // ========================
 // DO NOT EDIT THIS BLOCK
 module.exports = assignment;
 // ========================
-
